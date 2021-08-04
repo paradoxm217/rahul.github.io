@@ -1,0 +1,416 @@
+/*font
+-----------------------------------------------------------------------------------------------------------------------------*/
+.font-xs{font-size: 1.2rem !important;}
+.font-x1{font-size: 1.6rem !important;}
+.font-x2{font-size: 2.2rem !important;}
+.font-x3{font-size: 3rem !important;}
+.font-x4{font-size: 5rem !important;}
+
+@media screen and (max-width: 1024px)
+{
+    .font-xs{font-size: 1rem !important;}
+    .font-x1{font-size: 1.2rem !important;}
+    .font-x2{font-size: 1.8rem !important;}
+    .font-x3{font-size: 2.5rem !important;}
+    .font-x4{font-size: 4rem !important;}
+}
+@media screen and (max-width: 900px)
+{
+    .font-xs{font-size: 0.9rem !important;}
+    .font-x1{font-size: 1.1rem !important;}
+    .font-x2{font-size: 1.4rem !important;}
+    .font-x3{font-size: 1.9rem !important;}
+    .font-x4{font-size: 3rem !important;}
+}
+@media screen and (max-width: 768px)
+{
+    .font-xs{font-size: 0.8rem !important;}
+    .font-x1{font-size: 1rem !important;}
+    .font-x2{font-size: 1.2rem !important;}
+    .font-x3{font-size: 1.5rem !important;}
+    .font-x4{font-size: 2.2rem !important;}
+}
+@media screen and (max-width: 640px)
+{
+    .font-x3{font-size: 1.3rem !important;}
+}
+
+.heading{margin:0; line-height: normal;}
+
+/*margin
+-----------------------------------------------------------------------------------------------------------------------------*/
+.m-0{margin: 0rem !important;}
+.m-1{margin: 1rem !important;}
+.m-2{margin: 2rem !important;}
+.m-3{margin: 3rem !important;}
+.m-4{margin: 4rem !important;}
+
+.my-1{margin-top: 1rem; margin-bottom: 1rem;}
+.my-2{margin-top: 2rem; margin-bottom: 2rem;}
+.my-3{margin-top: 3rem; margin-bottom: 3rem;}
+.my-4{margin-top: 4rem; margin-bottom: 4rem;}
+.my-5{margin-top: 5rem; margin-bottom: 5rem;}
+.my-6{margin-top: 6rem; margin-bottom: 6rem;}
+
+.mx-1{margin-left: 1rem; margin-right: 1rem;}
+.mx-2{margin-left: 2rem; margin-right: 2rem;}
+.mx-3{margin-left: 3rem; margin-right: 3rem;}
+.mx-4{margin-left: 4rem; margin-right: 4rem;}
+.mx-5{margin-left: 5rem; margin-right: 5rem;}
+.mx-6{margin-left: 6rem; margin-right: 6rem;}
+
+/*padding
+-----------------------------------------------------------------------------------------------------*/
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+.p-4{padding: 4rem;}
+
+.nospace{margin: 0 !important; padding: 0 !important; list-style: none;}
+
+/*HTML tag
+--------------------------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5{font-weight: normal;}
+ul{margin: 0;}
+article, figure, section{display: block; margin: 0; padding: 0;}
+img{
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html{overflow-y: scroll; overflow-x: hidden;}
+
+html, boby{
+    color: #fff;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    font-family: Poppins, sana-serif;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #767676;
+    cursor: pointer;
+}
+
+/* General class
+------------------------------------------------------------------------------------------------------*/
+.wrapper{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.container{padding: 6rem;}
+
+@media screen and (max-width: 1024px){
+    .container{padding: 5rem !important;}
+}
+@media screen and (max-width: 900px){
+    .container{padding: 4rem !important;}
+}
+@media screen and (max-width: 768px){
+    .container{padding: 2rem !important;}
+}
+@media screen and (max-width: 640px){
+    .container{padding: 1.5rem !important;}
+}
+
+/*Background color*/
+.bg-white{background-color: #fff !important;}
+.bg-light-blue{background-color: #b0cdf8 !important;}
+
+/* width class */
+.w-30{width: 30%;}
+.w-40{width: 40%;}
+.w-45{width: 45%;}
+.w-50{width: 50%;}
+.w-60{width: 60%;}
+.w-70{width: 70%;}
+
+@media screen and (max-width: 1024px){
+    .w-70{width: 80%;}
+}
+@media screen and (max-width: 900px){
+    .w-70{width: 90%;}
+}
+@media screen and (max-width: 1024px){
+    .w-30{width: 70%;}
+    .w-40, .w-50, .w-60, .w-70{width: 90%;}
+}
+
+/* Text class */
+.text-center{ text-align: center;}
+.text-right{text-align: right;}
+.text-uppercase{text-transform: uppercase;}
+.text-left{text-align: left !important;}
+.text-bold{font-weight: 600;}
+.text-normal{font-weight: normal;}
+.text-justify{text-align: justify !important;}
+.text-black{color: #000 !important;}
+.text-white{color: #fff !important;}
+.text-dark{color: #767676;}
+.text-blue{color: #1335cc;}
+
+
+/* Flex poperty 
+This will align the flex items in diffent rows within a single column*/
+.d-flex-c{
+    display: flex !important;
+    margin: 0 auto; 
+    flex-direction: column;
+    justify-content: center;
+}
+/* Flex poperty 
+This will align the flex items in diffent columns within a single row*/
+.d-flex-r{
+    display: flex !important;
+    margin: 0 auto; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Overlay class for adding color effect to pictures */
+.overlay{
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+
+/* Navigation Bar 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------*/
+/*#header{float: right;}*/
+nav ul{margin:0; padding: 0; list-style: none;}
+
+#main-navbar li{
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;          /*<top-bottom> <left-right>*/
+    padding: 0;
+}
+#main-navbar li a{
+    display: inline-block;
+    margin: 25px 5px;
+    color: inherit;
+}
+/* Hide the Level 2 and Level 3 links */
+#main-navbar ul ul{
+    z-index: 999;
+    position: absolute;
+    width: 180px;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+}
+/* Dispaly the level 2 links on hovering */
+#main-navbar ul li:hover > ul{visibility: visible; opacity: 1;}
+
+#main-navbar li li{width: 100%; margin: 0;} 
+/* Hovering effect on the level 2  & level 3 links  */
+#main-navbar li li:hover >a{
+    color: #fff;
+    background: #1335cc;
+}
+
+/*format the level 2 & 3 links  */
+#main-navbar li li a, #main-navbar li li .drop{
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    background: #fff;
+}
+
+/* position the level 3 links  */
+#main-navbar ul ul ul{left: 180px; top:0;}
+
+/* Transition effect on the level 2 and level 3 links  */
+#main-navbar a:hover, #main-navbar li:hover > a{
+    color: #000;
+    font-size: inherit;
+    transition: 0.3s ease-in-out;
+}
+
+/* Down Arrow next to the Multi level links  */
+#main-navbar .drop::after{
+    position: absolute;
+    font-family:  "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;   /*Font Awesome won't work without this for solid style icon*/
+    line-height: 10px;
+    content: '\f107'      /*code for down Arrow Icon */
+}
+
+/* position the down arrow icon in the level 1 links */ 
+#main-navbar .drop::after{
+    padding-left: 0.25rem;
+    top: 31px;
+}
+/* position the down arrow icon in the level 2 links */ 
+#main-navbar li li .drop::after{
+    top: 15px;
+}
+
+/* Links Animation over the links  */
+#main-navbar .nav-item .nav-link:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 100%;
+    background-color: #1335cc;
+    height: 3px; 
+    transition: right .3s ease-out;     /*transition-property: right;
+                                        transition-duration: 0.3s;
+                                        transition-timing-function: ease-out;*/
+}
+/* Line to be drawn from 100% right (or 0 left) to 0 right (or 100% left) */
+#main-navbar .nav-item .nav-link:hover::before{right: 0;}
+
+/* Button */
+.btn{
+    position: relative;
+    font-weight: 500;
+    border-width: 1px;
+    letter-spacing: normal;
+    margin: 0.4rem 0.8rem;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 0.3s, 0.3s, 0.3s, 0.8s;
+    transition-timing-function: ease-in-out;
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word; 
+}
+.btn:hover, .btn:focus{
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2) !important;
+}
+.btn-blue, .btn-blue:active{
+    background-color: #1335cc !important;
+    color: #fff !important;
+    border-color: #1335cc !important;
+}
+.btn-blue:hover, .btn-blue:focus{
+    background-color: #1613cc !important;  
+    border-color: #1613cc !important;
+}
+/* Pulsing Effect Animation on button  */
+.btn:hover:after, .btn:focus:after{
+    content: '';
+    border: 1px solid;
+    border-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition: border-radius 0.3s;
+    position: absolute; 
+    left: 0%;
+    top: 0%;
+    opacity: 1;
+    animation: 1s btn-animation linear infinite;
+}
+@keyframes btn-animation {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px){
+
+    #header.d-flex-r{flex-direction: column;}
+    /* Arrange the Nav links horizontally */
+    #main-navbar .d-flex-r{flex-direction: column;}
+    /* Make sure line animation is not overflown */
+    #main-navbar > ul > li{max-width: max-content;}  
+
+    #main-navbar li a{margin: 10px 5px;}     /*reduce margins*/
+    #main-navbar .drop::after{top: 14px;}
+}
+
+/* Top Part 
+-------------------------------------------------------------------------------------------------------------*/
+#top-part{
+    background: url(img/1.jpg) fixed no-repeat;
+    background-size: cover;
+    min-height: 992px;
+    background-position: center;
+}
+#top-part .overlay{min-height: 992px;}
+
+/*Banner Text*/
+#banner-text{
+    position: relative;
+    top: 50px;
+    padding-left: 50px;
+}
+#banner-text .title{font-weight: 800;}
+#banner-text .subtitle{font-weight: 500;}
+
+@media screen and (max-width: 1024px)
+{
+    #top-part{min-height: 950px;}
+    #top-part .overlay{min-height: 950px;}
+}
+@media screen and (max-width: 900px)
+{
+    #top-part{min-height: 900px;}
+    #top-part .overlay{min-height: 900px;}
+}
+@media screen and (max-width: 768px)
+{
+    #top-part{min-height: 850px;}
+    #top-part .overlay{min-height: 850px;}
+}
+
+
+
+/*features-grid
+------------------------------------------------------------------------------------------*/
+.features-grid-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;   /* The container will be align in the center*/
+    padding-bottom: 5rem;
+}
+/* Reverse the position of text and image in second row  */
+.features-grid-row#second-row{flex-direction: row-reverse;}
+.features-grid-row{
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 0.3s, 0.3s, 0.3s, 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.features-grid-row:hover{
+    box-shadow: 5px 20px 50px 0 rgba(0,0,0,0.2) !important;
+}
+
+#first-row .features-grid-row-text{text-align: left;}
+#second-row .features-grid-row-text{text-align: right;}
+
+@media screen and (max-width: 768px){
+    .features-grid-row .w-50{
+        width: 80%;
+        margin-left: auto; 
+        margin-right: auto;    /*Align in the centre*/
+    }
+    .features-grid-row.d-flex-r{flex-direction: column;}
+    .features-grid-row#second-row{flex-direction: column;}
+
+    #first-row .features-grid-row-text,
+    #second-row .features-grid-row-text{text-align: center;}
+}
